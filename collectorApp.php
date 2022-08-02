@@ -5,12 +5,13 @@ $dbUsername = 'root';
 $dbPassword = 'password';
 $db = new PDO($connectionString, $dbUsername, $dbPassword);
 
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
 $queryString = 'SELECT * FROM `myplanets`;';
 $query = $db->prepare($queryString);
 $query->execute();
 
 $allResults = $query->fetchAll();
-$firstResult = $query->fetch();
 
 print_r($allResults);
 
@@ -22,7 +23,7 @@ print_r($allResults);
     <title>Celestial System</title>
 </head>
 <body>
-<p>Hello</p>
+
 </body>
 </html>
 
