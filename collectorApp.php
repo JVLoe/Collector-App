@@ -49,17 +49,17 @@ function showPlanet($planet){
 </header>
 <main>
     <section>
-        <p><?php echo implode("<br>",$venus);; ?></p>
+        <p><?php echo implode("<br>",$venus); ?></p>
 
     </section>
     <section>
-        <p><?php echo implode("<br>",$mars);; ?></p>
+        <p><?php echo implode("<br>",$mars); ?></p>
     </section>
     <section>
-        <p><?php echo implode("<br>",$jupiter);; ?></p>
+        <p><?php echo implode("<br>",$jupiter); ?></p>
     </section>
     <section>
-        <p><?php echo implode("<br>",$neptune);; ?></p>
+        <p><?php echo implode("<br>",$neptune); ?></p>
     </section>
 </main>
 </body>
