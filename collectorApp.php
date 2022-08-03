@@ -22,13 +22,16 @@ $venus = $allResults[0];
 
 $mars = $allResults[1];
 
+//print_r($mars['name']);
+
 $jupiter = $allResults[2];
 
 $neptune = $allResults[3];
 
-function showPlanet($planet){
-    return $planet;
-}
+//
+//function displayArray($array){
+//        foreach ($array, )
+//}
 
 ?>
 
@@ -37,28 +40,25 @@ function showPlanet($planet){
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celestial System</title>
-    <link rel=stylesheet type="text/css" href="normalize.css">
-    <link rel=stylesheet type="text/css" href="collectorApp.css">
-    <script src="https://kit.fontawesome.com/14c42a68eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="collector.css">
 </head>
 <body>
 <header>
-    <div class="header">
-        <p>Celestial System</p>
+    <div class="header_container">
+        <h1>Celestial System</h1>
     </div>
 </header>
 <main>
-    <section>
+    <section class="planet_containers">
         <p><?php echo implode("<br>",$venus); ?></p>
-
     </section>
-    <section>
+    <section class="planet_containers">
         <p><?php echo implode("<br>",$mars); ?></p>
     </section>
-    <section>
+    <section class="planet_containers">
         <p><?php echo implode("<br>",$jupiter); ?></p>
     </section>
-    <section>
+    <section class="planet_containers">
         <p><?php echo implode("<br>",$neptune); ?></p>
     </section>
 </main>
