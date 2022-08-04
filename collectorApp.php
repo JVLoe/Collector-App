@@ -15,16 +15,9 @@ $query->execute();
 
 $allResults = $query->fetchAll();
 
-//print_r($allResults);
-//print_r($allResults[0]);
-
 $venus = $allResults[0];
 
-//echo implode("<br>",$venus);
-
 $mars = $allResults[1];
-
-//print_r($mars['temperature']);
 
 $jupiter = $allResults[2];
 
