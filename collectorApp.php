@@ -29,7 +29,7 @@ $jupiter = $allResults[2];
 $neptune = $allResults[3];
 
 
-function changeArrayKeys($array){
+function showKeyAndValue($array){
     foreach($array as $key => $value) {
         echo "<p>$key: $value</p>";
     }
@@ -52,16 +52,16 @@ function changeArrayKeys($array){
 </header>
 <main>
     <section class="planet_containers">
-        <p><?php changeArrayKeys($venus); ?></p>
+        <p><?php showKeyAndValue($venus); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php changeArrayKeys($mars); ?></p>
+        <p><?php showKeyAndValue($mars); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php changeArrayKeys($jupiter); ?></p>
+        <p><?php showKeyAndValue($jupiter); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php changeArrayKeys($neptune); ?></p>
+        <p><?php showKeyAndValue($neptune); ?></p>
     </section>
 </main>
 </body>
