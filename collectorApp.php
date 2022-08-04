@@ -1,5 +1,7 @@
 <?php
 
+require_once 'functions.php';
+
 $connectionString = 'mysql:host=db; dbname=planetdatabase';
 $dbUsername = 'root';
 $dbPassword = 'password';
@@ -13,27 +15,13 @@ $query->execute();
 
 $allResults = $query->fetchAll();
 
-//print_r($allResults);
-//print_r($allResults[0]);
-
 $venus = $allResults[0];
 
-//echo implode("<br>",$venus);
-
 $mars = $allResults[1];
-
-//print_r($mars['temperature']);
 
 $jupiter = $allResults[2];
 
 $neptune = $allResults[3];
-
-
-function showKeyAndValue($array){
-    foreach($array as $key => $value) {
-        echo "<p>$key: $value</p>";
-    }
-}
 
 ?>
 
