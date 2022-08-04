@@ -23,6 +23,7 @@ body {
 
 h1 {
     font-size: 5rem;
+    text-transform: uppercase;
     color: aliceblue;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0;
 }
@@ -34,9 +35,10 @@ h1 {
     color: aliceblue;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0;
     font-size: 3rem;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bolder;
     text-align: center;
-    margin: 100px;
+    margin: 110px;
     border: 5px dashed rgba(211, 142, 54, 1);
     border-radius: 50px;
     background-color: #181613;
@@ -55,14 +57,15 @@ h1 {
         display: flex;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         color: aliceblue;
         padding: 10px;
         text-align: center;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0
     }
     p {
-        font-size: 2.5rem;
+        display: flex;
+        font-size: 2rem;
         color: aliceblue;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0
     }
@@ -70,7 +73,7 @@ h1 {
         display: flex;
         text-align: justify-all;
         margin: 50px;
-        padding: 20px;
+        padding: 10px;
         border: 8px dotted rgba(250, 168, 62, 1);
         border-radius: 50px;
     }
@@ -82,5 +85,14 @@ h1 {
         flex-direction: column;
         justify-content: center;
 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
     }
 }
