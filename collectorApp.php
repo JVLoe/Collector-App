@@ -22,16 +22,18 @@ $venus = $allResults[0];
 
 $mars = $allResults[1];
 
-//print_r($mars['name']);
+//print_r($mars['temperature']);
 
 $jupiter = $allResults[2];
 
 $neptune = $allResults[3];
 
-//
-//function displayArray($array){
-//        foreach ($array, )
-//}
+
+function changeArrayKeys($array){
+    foreach($array as $key => $value) {
+        echo "<p>$key: $value</p>";
+    }
+}
 
 ?>
 
@@ -39,27 +41,27 @@ $neptune = $allResults[3];
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial System</title>
+    <title>Solar System</title>
     <link rel="stylesheet" type="text/css" href="collector.css">
 </head>
 <body>
 <header>
     <div class="header_container">
-        <h1>Celestial System</h1>
+        <h1>Solar System</h1>
     </div>
 </header>
 <main>
     <section class="planet_containers">
-        <p><?php echo implode("<br>",$venus); ?></p>
+        <p><?php changeArrayKeys($venus); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php echo implode("<br>",$mars); ?></p>
+        <p><?php changeArrayKeys($mars); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php echo implode("<br>",$jupiter); ?></p>
+        <p><?php changeArrayKeys($jupiter); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php echo implode("<br>",$neptune); ?></p>
+        <p><?php changeArrayKeys($neptune); ?></p>
     </section>
 </main>
 </body>
