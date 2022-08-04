@@ -1,8 +1,10 @@
 <?php
 
-function showKeyAndValue($array)
+function showKeyAndValue($array): string
 {
+    $str = '';
     foreach ($array as $key => $value) {
-        echo "<p>$key: $value</p>";
+        $str .= "<p>$key: $value</p>";
     }
+    return $str;
 }

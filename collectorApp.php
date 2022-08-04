@@ -40,16 +40,16 @@ $neptune = $allResults[3];
 </header>
 <main>
     <section class="planet_containers">
-        <p><?php showKeyAndValue($venus); ?></p>
+        <p><?php echo showKeyAndValue($venus); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php showKeyAndValue($mars); ?></p>
+        <p><?php echo showKeyAndValue($mars); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php showKeyAndValue($jupiter); ?></p>
+        <p><?php echo  showKeyAndValue($jupiter); ?></p>
     </section>
     <section class="planet_containers">
-        <p><?php showKeyAndValue($neptune); ?></p>
+        <p><?php echo showKeyAndValue($neptune); ?></p>
     </section>
 </main>
 </body>

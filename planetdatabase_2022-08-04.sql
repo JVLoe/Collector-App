@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.38)
 # Database: planetdatabase
-# Generation Time: 2022-08-01 14:33:20 +0000
+# Generation Time: 2022-08-04 13:52:50 +0000
 # ************************************************************
 
 
@@ -32,17 +32,17 @@ CREATE TABLE `myplanets` (
   `colour` varchar(500) DEFAULT NULL,
   `size` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `myplanets` WRITE;
 /*!40000 ALTER TABLE `myplanets` DISABLE KEYS */;
 
 INSERT INTO `myplanets` (`id`, `name`, `temperature`, `colour`, `size`)
 VALUES
-	(1,'Venus','475C','Yollow-White','6051.8 km'),
+	(1,'Venus','475C','Yellow-White','6051.8 km'),
 	(2,'Mars','-65C','Red','3389.5 km'),
 	(3,'Jupiter','-110C','Dusty-Orange','69911 km'),
-	(4,'Neptune','-225','Azure-Blue','24622 km ');
+	(4,'Neptune','-225C','Azure-Blue','24622 km ');
 
 /*!40000 ALTER TABLE `myplanets` ENABLE KEYS */;
 UNLOCK TABLES;
